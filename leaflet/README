@@ -1,0 +1,14 @@
+Local map generated using tilemill: http://mapbox.com/tilemill/
+Exported to mbtile: http://mapbox.com/mbtiles-spec/
+Converted to standard .png tiles with mbutil: https://github.com/mapbox/mbutil
+  $ mb-util mbtile/oli-test.mbtiles tiles --scheme osm
+
+To serve up .png tiles locally:
+$ cd ~/workspace/maps/
+$ python -m SimpleHTTPServer
+
+Tiles at:
+  http://localhost:8000/tiles/1.0.0/oli-test/{z}/{x}/{y}.png
+
+Map at:
+  http://localhost:8000/leaflet/leaflet.owntiles.html
